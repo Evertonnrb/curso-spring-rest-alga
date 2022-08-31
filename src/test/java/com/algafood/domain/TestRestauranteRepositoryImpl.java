@@ -1,13 +1,11 @@
 package com.algafood.domain;
 
 import com.algafood.domain.model.Restaurante;
-import com.algafood.infrastrutura.RestauranteRepositoryImpl;
+import com.algafood.domain.infrastrutura.RestauranteRepositoryImpl;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.AssertionsKt;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.util.Assert;
 
 import java.math.BigDecimal;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.algafood.infrastrutura;
+package com.algafood.domain.infrastrutura;
 
 import com.algafood.domain.model.FormaPagamento;
 import com.algafood.domain.repository.FormaPagamentorepository;

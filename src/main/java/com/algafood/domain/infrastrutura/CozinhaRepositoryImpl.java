@@ -1,4 +1,4 @@
-package com.algafood.infrastrutura;
+package com.algafood.domain.infrastrutura;
 
 import com.algafood.domain.model.Cozinha;
 import com.algafood.domain.repository.CozinhaRepository;
@@ -33,8 +33,8 @@ public class CozinhaRepositoryImpl implements CozinhaRepository {
 
     @Transactional
     @Override
-    public void deletarCozinha(Cozinha cozinha) {
-        cozinha = buscarPorCodigo(cozinha.getId());
+    public void deletarCozinha(Long id) {
+        Cozinha cozinha = buscarPorCodigo(id);
         manager.remove(cozinha);
     }
 
