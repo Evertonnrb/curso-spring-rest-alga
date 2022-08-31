@@ -38,8 +38,9 @@ public class CozinhaRepositoryImpl implements CozinhaRepository {
         manager.remove(cozinha);
     }
 
+    @Transactional
     @Override
     public Cozinha atulizarCozinha(Cozinha cozinha) {
-        return cadastrarCozinha(cozinha);
+        return manager.merge(cozinha);
     }
 }

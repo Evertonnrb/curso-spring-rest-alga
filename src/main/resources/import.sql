@@ -17,4 +17,4 @@ insert into restaurante (nome, taxa_frete, cozinha_id) values ('Da roça aqui', 
 insert into restaurante (nome, taxa_frete, cozinha_id) values ('Da serra aqui', 111.5, 8);
 insert into restaurante (nome, taxa_frete, cozinha_id) values ('Do mar aqui', 1.9, 9);
 
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINfdPDCoPEt2D6WsiDWEngohjKi8LZ93rClAJennMihl everton.nrb@gmail.com
+
