@@ -18,25 +18,25 @@ public class CozinhaService {
     private CozinhaRepository repository;
 
     public Cozinha salvar(Cozinha cozinha) {
-        return repository.cadastrarCozinha(cozinha);
+        return repository.save(cozinha);
     }
 
     public Cozinha buscarPorCodigo(Long id) {
-        return repository.buscarPorCodigo(id);
+        return repository.getReferenceById(id);
     }
 
     public List<Cozinha> listar() {
-        return repository.listarCozinha();
+        return repository.findAll();
     }
 
     public Cozinha atualizar(Long id) {
-        Cozinha cozinha = repository.buscarPorCodigo(id);
-        return repository.atulizarCozinha(cozinha);
+        Cozinha cozinha = repository.getReferenceById(id);
+        return repository.save(cozinha);
     }
 
     public void remover(Long id) {
         try {
-            repository.deletarCozinha(id);
+            repository.deleteById(id);
         } catch (DataIntegrityViolationException e) {
             throw new EntidadeEmUsoException(String.format("Endidade de COD %d em uso, não pode ser removida! ", id));
         } catch (EmptyResultDataAccessException e) {

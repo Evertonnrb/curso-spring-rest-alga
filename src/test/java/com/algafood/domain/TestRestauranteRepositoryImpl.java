@@ -1,7 +1,6 @@
 package com.algafood.domain;
 
 import com.algafood.domain.model.Restaurante;
-import com.algafood.domain.infrastrutura.RestauranteRepositoryImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
